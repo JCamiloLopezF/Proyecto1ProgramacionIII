@@ -1,4 +1,4 @@
-package personas;
+package org.example.proyectoprogramacion3fx.personas;
 
 public class Usuario extends Persona{
     private String telefono;

@@ -1,4 +1,4 @@
-package vehiculos;
+package org.example.proyectoprogramacion3fx.vehiculos;
 
 public class Automovil extends Vehiculo {
     private String tipoAutomovil;

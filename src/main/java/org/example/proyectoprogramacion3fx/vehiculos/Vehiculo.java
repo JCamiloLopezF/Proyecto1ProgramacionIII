@@ -1,4 +1,4 @@
-package vehiculos;
+package org.example.proyectoprogramacion3fx.vehiculos;
 
 public abstract class Vehiculo {
     protected String placa;
