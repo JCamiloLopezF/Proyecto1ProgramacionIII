@@ -1,4 +1,4 @@
-package org.example.proyectoprogramacion3fx.vehiculos;
+package org.example.proyectoprogramacion3fx.Model.vehiculos;
 
 public class Camioneta extends Vehiculo {
     private String tipoTraccion;
@@ -16,4 +16,3 @@ public class Camioneta extends Vehiculo {
         this.tipoTraccion = tipoTraccion;
     }
 }
-

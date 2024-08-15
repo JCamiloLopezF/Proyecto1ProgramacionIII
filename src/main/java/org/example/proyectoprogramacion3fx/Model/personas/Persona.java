@@ -1,4 +1,4 @@
-package org.example.proyectoprogramacion3fx.personas;
+package org.example.proyectoprogramacion3fx.Model.personas;
 
 public abstract class Persona {
     protected String nombre;

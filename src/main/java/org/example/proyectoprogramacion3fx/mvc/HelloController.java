@@ -1,4 +1,4 @@
-package org.example.proyectoprogramacion3fx;
+package org.example.proyectoprogramacion3fx.mvc;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;

@@ -1,4 +1,4 @@
-package org.example.proyectoprogramacion3fx.vehiculos;
+package org.example.proyectoprogramacion3fx.Model.vehiculos;
 
 public class Campero extends Vehiculo {
     public Campero(String placa, String marca, String modelo) {

@@ -1,8 +1,12 @@
 package org.example.proyectoprogramacion3fx;
 
 public class TallerAutomotriz {
-    public static void main(String[] args) {
-        System.out.println("Hello world!");
+    private static TallerAutomotriz instanciaUnica;
 
+    public static TallerAutomotriz getInstanciaUnica() {
+        if(instanciaUnica == null){
+            instanciaUnica = new TallerAutomotriz();
+        }
+        return instanciaUnica;
     }
 }

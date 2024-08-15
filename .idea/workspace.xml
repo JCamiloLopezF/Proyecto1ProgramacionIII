@@ -5,13 +5,47 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b4a7b58d-b060-43b2-8cc7-b785a74cb573" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/proyectoprogramacion3fx/factory/CitaCambioAceiteFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/proyectoprogramacion3fx/factory/CitaCambioNeumaticosFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/proyectoprogramacion3fx/factory/CitaFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/proyectoprogramacion3fx/factory/CitaRevisionGeneralFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/proyectoprogramacion3fx/state/Estado.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/proyectoprogramacion3fx/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/proyectoprogramacion3fx/mvc/HelloApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/proyectoprogramacion3fx/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/proyectoprogramacion3fx/mvc/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/proyectoprogramacion3fx/citas/MetodoPago.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/proyectoprogramacion3fx/Model/citas/MetodoPago.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/proyectoprogramacion3fx/citas/TipoCita.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/proyectoprogramacion3fx/Model/citas/TipoCita.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/proyectoprogramacion3fx/personas/Empleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/proyectoprogramacion3fx/Model/personas/Empleado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/proyectoprogramacion3fx/personas/Persona.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/proyectoprogramacion3fx/Model/personas/Persona.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/proyectoprogramacion3fx/personas/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/proyectoprogramacion3fx/Model/personas/Usuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/proyectoprogramacion3fx/vehiculos/Automovil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/proyectoprogramacion3fx/Model/vehiculos/Automovil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/proyectoprogramacion3fx/vehiculos/Camioneta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/proyectoprogramacion3fx/Model/vehiculos/Camioneta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/proyectoprogramacion3fx/vehiculos/Campero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/proyectoprogramacion3fx/Model/vehiculos/Campero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/proyectoprogramacion3fx/vehiculos/Moto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/proyectoprogramacion3fx/Model/vehiculos/Moto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/proyectoprogramacion3fx/vehiculos/Vehiculo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/proyectoprogramacion3fx/Model/vehiculos/Vehiculo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/proyectoprogramacion3fx/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/proyectoprogramacion3fx/hello-view.fxml" afterDir="false" />
+    </list>
+    <list id="e40422c3-c0ea-4d12-a280-c34706815150" name="Changes by Juan Camilo López" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/proyectoprogramacion3fx/GestorCita.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/proyectoprogramacion3fx/GestorCita.java" afterDir="false" />
+    </list>
+    <list id="eed50b72-de00-4592-8535-c222a35ae219" name="Changes by JUAN PABLO" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/proyectoprogramacion3fx/TallerAutomotriz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/proyectoprogramacion3fx/TallerAutomotriz.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -35,6 +69,7 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/playa/Downloads/proyecto-programacion-3-fx/src/main/java/org/example/proyectoprogramacion3fx&quot;,
@@ -49,6 +84,9 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\playa\Downloads\proyecto-programacion-3-fx\src\main\java\org\example\proyectoprogramacion3fx" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.example.proyectoprogramacion3fx" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org.example.proyectoprogramacion3fx" />
@@ -72,6 +110,10 @@
       <updated>1723515240796</updated>
       <workItem from="1723515241978" duration="1947000" />
       <workItem from="1723647500487" duration="8000" />
+      <workItem from="1723664481674" duration="111000" />
+      <workItem from="1723686599757" duration="6145000" />
+      <workItem from="1723728960537" duration="139000" />
+      <workItem from="1723729231773" duration="24000" />
     </task>
     <servers />
   </component>
