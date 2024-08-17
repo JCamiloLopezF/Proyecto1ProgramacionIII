@@ -5,34 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b4a7b58d-b060-43b2-8cc7-b785a74cb573" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/proyectoprogramacion3fx/factory/CitaCambioAceiteFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/proyectoprogramacion3fx/factory/CitaCambioNeumaticosFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/proyectoprogramacion3fx/factory/CitaFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/proyectoprogramacion3fx/factory/CitaRevisionGeneralFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/proyectoprogramacion3fx/state/Estado.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/proyectoprogramacion3fx/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/proyectoprogramacion3fx/mvc/HelloApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/proyectoprogramacion3fx/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/proyectoprogramacion3fx/mvc/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/proyectoprogramacion3fx/citas/MetodoPago.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/proyectoprogramacion3fx/Model/citas/MetodoPago.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/proyectoprogramacion3fx/citas/TipoCita.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/proyectoprogramacion3fx/Model/citas/TipoCita.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/proyectoprogramacion3fx/personas/Empleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/proyectoprogramacion3fx/Model/personas/Empleado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/proyectoprogramacion3fx/personas/Persona.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/proyectoprogramacion3fx/Model/personas/Persona.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/proyectoprogramacion3fx/personas/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/proyectoprogramacion3fx/Model/personas/Usuario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/proyectoprogramacion3fx/vehiculos/Automovil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/proyectoprogramacion3fx/Model/vehiculos/Automovil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/proyectoprogramacion3fx/vehiculos/Camioneta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/proyectoprogramacion3fx/Model/vehiculos/Camioneta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/proyectoprogramacion3fx/vehiculos/Campero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/proyectoprogramacion3fx/Model/vehiculos/Campero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/proyectoprogramacion3fx/vehiculos/Moto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/proyectoprogramacion3fx/Model/vehiculos/Moto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/proyectoprogramacion3fx/vehiculos/Vehiculo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/proyectoprogramacion3fx/Model/vehiculos/Vehiculo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/proyectoprogramacion3fx/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/proyectoprogramacion3fx/hello-view.fxml" afterDir="false" />
-    </list>
-    <list id="e40422c3-c0ea-4d12-a280-c34706815150" name="Changes by Juan Camilo López" comment="">
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/proyectoprogramacion3fx/GestorCita.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/proyectoprogramacion3fx/GestorCita.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/proyectoprogramacion3fx/Model/Cita.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/proyectoprogramacion3fx/Model/Cita.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/proyectoprogramacion3fx/Model/citas/CitaCambioNeumaticos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/proyectoprogramacion3fx/Model/citas/CitaCambioNeumaticos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/proyectoprogramacion3fx/state/Estado.java" beforeDir="false" />
+    </list>
+    <list id="00aee409-f2c2-4de7-bfa6-b059ce3173e3" name="Changes by Juan Camilo López" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/proyectoprogramacion3fx/factory/CitaCambioAceiteFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/proyectoprogramacion3fx/factory/CitaCambioAceiteFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/proyectoprogramacion3fx/factory/CitaCambioNeumaticosFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/proyectoprogramacion3fx/factory/CitaCambioNeumaticosFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/proyectoprogramacion3fx/factory/CitaFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/proyectoprogramacion3fx/factory/CitaFactory.java" afterDir="false" />
     </list>
     <list id="eed50b72-de00-4592-8535-c222a35ae219" name="Changes by JUAN PABLO" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/proyectoprogramacion3fx/Model/personas/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/proyectoprogramacion3fx/Model/personas/Usuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/proyectoprogramacion3fx/Model/vehiculos/Camioneta.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/proyectoprogramacion3fx/Model/vehiculos/Campero.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/proyectoprogramacion3fx/Model/vehiculos/Moto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/proyectoprogramacion3fx/SolicitudCita.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/proyectoprogramacion3fx/TallerAutomotriz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/proyectoprogramacion3fx/TallerAutomotriz.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/proyectoprogramacion3fx/factory/CitaFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/proyectoprogramacion3fx/factory/CitaFactory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +41,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/src/main/java/org/example/proyectoprogramacion3fx/factory/CitaFactory.java">
+      <ranges>
+        <range start1="3" end1="3" start2="3" end2="5" changelist="00aee409-f2c2-4de7-bfa6-b059ce3173e3" />
+        <range start1="6" end1="7" start2="8" end2="9" changelist="eed50b72-de00-4592-8535-c222a35ae219" />
+      </ranges>
+    </file>
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -114,6 +114,10 @@
       <workItem from="1723686599757" duration="6145000" />
       <workItem from="1723728960537" duration="139000" />
       <workItem from="1723729231773" duration="24000" />
+      <workItem from="1723732674126" duration="706000" />
+      <workItem from="1723772578902" duration="167000" />
+      <workItem from="1723772766860" duration="1023000" />
+      <workItem from="1723859087893" duration="6475000" />
     </task>
     <servers />
   </component>
