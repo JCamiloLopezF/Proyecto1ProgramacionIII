@@ -1,7 +1,9 @@
 package org.example.proyectoprogramacion3fx;
 
 import org.example.proyectoprogramacion3fx.Model.personas.Usuario;
-import org.example.proyectoprogramacion3fx.Model.vehiculos.Automovil;
+import org.example.proyectoprogramacion3fx.Model.vehiculos.MarcaVehiculoCarro;
+import org.example.proyectoprogramacion3fx.Model.vehiculos.TipoVehiculo;
+import org.example.proyectoprogramacion3fx.Model.vehiculos.Vehiculo;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,10 +16,10 @@ public class Main {
         List<Usuario> usuarios = new ArrayList<>();
 
         //Creacion de automoviles
-        Automovil automovil1 = new Automovil("Carro", "SZG851", "BMW", "2019");
-        Automovil automovil2 = new Automovil("Carro", "WHZ445", "Audi", "2023");
-        Automovil automovil3 = new Automovil("Moto", "LSF08Q", "Yamaha", "2018");
-        Automovil automovil4 = new Automovil("Camioneta", "JQK881", "Lexus", "2025");
+        Vehiculo automovil1 = new Vehiculo("JQK779", MarcaVehiculoCarro.BUGATTI, 2023, TipoVehiculo.AUTOMOVIL);
+        Vehiculo automovil2 = new Vehiculo("GJX152", MarcaVehiculoCarro.CORVETTE, 2025, TipoVehiculo.AUTOMOVIL);
+        Vehiculo automovil3 = new Vehiculo("HKL324", MarcaVehiculoCarro.RENAULT, 2019, TipoVehiculo.AUTOMOVIL);
+        Vehiculo automovil4 = new Vehiculo("LUS267", MarcaVehiculoCarro.LEXUS, 2020, TipoVehiculo.CAMIONETA);
 
         //Creación de usuarios
         Usuario usuario1 = new Usuario("311233522", "asdasdasdad@gmail.com", "Daniel", "1089257634", automovil1);

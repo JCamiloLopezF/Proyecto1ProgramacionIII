@@ -4,7 +4,7 @@ import org.example.proyectoprogramacion3fx.Model.Cita;
 import org.example.proyectoprogramacion3fx.Model.personas.Usuario;
 import org.example.proyectoprogramacion3fx.Model.vehiculos.Vehiculo;
 
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,13 +16,13 @@ public class GestorCita {
         this.citas = new ArrayList<>();
     }
 
-    public void crearCita(LocalDateTime fechaHora, Usuario cliente, Vehiculo vehiculo) {
-        Cita nuevaCita = new Cita(fechaHora, cliente, vehiculo);
+    public void crearCita(LocalDate fechaHora, Usuario cliente, Vehiculo vehiculo, String hora) {
+        Cita nuevaCita = new Cita(fechaHora, cliente, vehiculo, hora);
         citas.add(nuevaCita);
         System.out.println("La cita se ha creado con éxito: " + nuevaCita);
     }
 
-    public boolean cancelarCita(LocalDateTime fechaHora) {
+    public boolean cancelarCita(LocalDate fechaHora) {
         for (Cita cita : citas) {
             if (cita.getFechaHora().equals(fechaHora)) {
                 citas.remove(cita);
@@ -35,7 +35,7 @@ public class GestorCita {
         return false;
     }
 
-    public Cita buscarCita(LocalDateTime fechaHora) {
+    public Cita buscarCita(LocalDate fechaHora) {
         for (Cita cita : citas) {
             if (cita.getFechaHora().equals(fechaHora)) {
                 return cita;

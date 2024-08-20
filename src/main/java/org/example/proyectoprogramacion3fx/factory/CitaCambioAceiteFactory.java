@@ -4,19 +4,12 @@ import org.example.proyectoprogramacion3fx.Model.Cita;
 import org.example.proyectoprogramacion3fx.Model.personas.Usuario;
 import org.example.proyectoprogramacion3fx.Model.vehiculos.Vehiculo;
 
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 
-public class CitaCambioAceiteFactory extends Cita implements CitaFactory {
-
-    public CitaCambioAceiteFactory(LocalDateTime fecha, Usuario cliente, Vehiculo vehiculo) {
-        super( fecha,cliente, vehiculo);
-        this.fecha = fecha;
-        this.cliente = cliente;
-        this.vehiculo = vehiculo;
-    }
+public class CitaCambioAceiteFactory implements CitaFactory {
 
     @Override
-    public Cita crearCita() {
-        return new Cita(fecha, cliente, vehiculo);
+    public Cita crearCita(LocalDate fecha, Usuario cliente, Vehiculo vehiculo, String hora) {
+        return new Cita(fecha, cliente, vehiculo, hora);
     }
 }

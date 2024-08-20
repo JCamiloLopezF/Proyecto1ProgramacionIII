@@ -1,15 +1,15 @@
 package org.example.proyectoprogramacion3fx.Model.personas;
 
-import org.example.proyectoprogramacion3fx.Model.vehiculos.Automovil;
+import org.example.proyectoprogramacion3fx.Model.vehiculos.Vehiculo;
 
 public class Usuario extends Persona{
     private String telefono;
     private String correo;
-    private Automovil automovil;
+    private Vehiculo vehiculo;
 
-    public Usuario(String telefono, String correo, String nombre, String identificacion, Automovil automovil) {
+    public Usuario(String telefono, String correo, String nombre, String identificacion, Vehiculo vehiculo) {
         super(nombre, identificacion);
-        this.automovil = automovil;
+        this.vehiculo = vehiculo;
         this.telefono = telefono;
         this.correo = correo;
     }
@@ -30,5 +30,5 @@ public class Usuario extends Persona{
         this.correo = correo;
     }
 
-    public Automovil getAutomovil() { return automovil; }
+    public Vehiculo getVehiculo() { return vehiculo; }
 }

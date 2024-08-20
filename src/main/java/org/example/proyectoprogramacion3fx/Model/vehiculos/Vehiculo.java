@@ -1,14 +1,18 @@
 package org.example.proyectoprogramacion3fx.Model.vehiculos;
 
-public abstract class Vehiculo {
-    protected String placa;
-    protected String marca;
-    protected String modelo;
+public class Vehiculo {
+    private String placa;
+    private MarcaVehiculoCarro marcaCarro;
+    private MarcaVehiculoMoto marcaMoto;
+    private int anioVehiculo;
+    private final TipoVehiculo tipoVehiculo;
 
-    public Vehiculo(String placa, String marca, String modelo) {
+    public Vehiculo(String placa, MarcaVehiculoCarro marcaCarro, MarcaVehiculoMoto marcaMoto, int anioVehiculo, TipoVehiculo tipoVehiculo) {
         this.placa = placa;
-        this.marca = marca;
-        this.modelo = modelo;
+        this.marcaCarro = marcaCarro;
+        this.marcaMoto = marcaMoto;
+        this.anioVehiculo = anioVehiculo;
+        this.tipoVehiculo = tipoVehiculo;
     }
 
     public String getPlaca() {
@@ -19,19 +23,31 @@ public abstract class Vehiculo {
         this.placa = placa;
     }
 
-    public String getMarca() {
-        return marca;
+    public MarcaVehiculoCarro getMarcaCarro() {
+        return marcaCarro;
     }
 
-    public void setMarca(String marca) {
-        this.marca = marca;
+    public void setMarcaCarro(MarcaVehiculoCarro marcaCarro) {
+        this.marcaCarro = marcaCarro;
     }
 
-    public String getModelo() {
-        return modelo;
+    public MarcaVehiculoMoto getMarcaMoto() {
+        return marcaMoto;
     }
 
-    public void setModelo(String modelo) {
-        this.modelo = modelo;
+    public void setMarcaMoto(MarcaVehiculoMoto marcaMoto) {
+        this.marcaMoto = marcaMoto;
+    }
+
+    public int getAnioVehiculo() {
+        return anioVehiculo;
+    }
+
+    public void setAnioVehiculo(int anioVehiculo) {
+        this.anioVehiculo = anioVehiculo;
+    }
+
+    public TipoVehiculo getTipoVehiculo() {
+        return tipoVehiculo;
     }
 }
