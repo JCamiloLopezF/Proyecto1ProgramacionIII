@@ -58,15 +58,15 @@ public class CalcularPrecio {
         double multiplicador = 1.0;
 
         switch (tipoCita) {
-            case CAMBIOACEITE:
+            case CAMBIO_ACEITE:
                 multiplicador = 0.5;
                 break;
 
-            case REVISIONGENERAL:
+            case REVISION_GENERAL:
                 multiplicador = 1.6;
                 break;
 
-            case CAMBIONEUMATICOS:
+            case CAMBIO_NEUMATICOS:
                 break;
 
             default:
