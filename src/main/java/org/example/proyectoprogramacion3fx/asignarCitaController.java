@@ -1,4 +1,4 @@
-package org.example.proyectoprogramacion3fx.Controller;
+package org.example.proyectoprogramacion3fx;
 
 import java.net.URL;
 import java.util.ResourceBundle;
