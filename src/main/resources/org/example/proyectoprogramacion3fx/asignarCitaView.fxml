@@ -10,11 +10,11 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="511.0" prefWidth="840.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="511.0" prefWidth="840.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="asignarCitaController">
    <children>
       <AnchorPane layoutX="-6.0" minHeight="0.0" minWidth="0.0" prefHeight="511.0" prefWidth="852.0">
          <children>
-            <Label fx:id="user_txt" layoutX="698.0" layoutY="54.0" prefHeight="18.0" prefWidth="87.0" text="Juan Pablo" />
+            <Label fx:id="user_txt" layoutX="698.0" layoutY="54.0" prefHeight="18.0" prefWidth="87.0" text="Francisco Arias" />
             <ImageView fitHeight="32.0" fitWidth="42.0" layoutX="645.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../../../../../../user.png" />
@@ -27,15 +27,15 @@
             <Text layoutX="97.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Marca de vehiculo" />
             <Button fx:id="asignar_btn" layoutX="191.0" layoutY="319.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="72.0" text="Asignar" />
             <Text layoutX="99.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tipo de cita" />
-            <ComboBox fx:id="marcaVehiculo_comboBox" layoutX="220.0" layoutY="126.0" prefWidth="150.0" promptText="Seleccione la marca" />
             <ComboBox fx:id="tipoCita_comboBox" layoutX="220.0" layoutY="198.0" prefWidth="150.0" promptText="Seleccione el tipo" />
             <Text layoutX="98.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Año de vehiculo" />
             <TextField fx:id="anioVehiculo_txt" layoutX="220.0" layoutY="162.0" />
             <DatePicker fx:id="fechaCita_Date" layoutX="219.0" layoutY="237.0" />
             <Text layoutX="100.0" layoutY="251.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fecha de cita" />
             <Text layoutX="100.0" layoutY="289.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hora de cita" />
-            <TextField fx:id="horaCita_txt" layoutX="219.0" layoutY="275.0" />
+            <TextField fx:id="horaCita_txt" layoutX="219.0" layoutY="274.0" />
             <Text fx:id="citaCreada_txt" layoutX="97.0" layoutY="392.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LA CITA COMO TAL CREADA" wrappingWidth="637.3367538452148" />
+            <TextField fx:id="marca_txt" layoutX="220.0" layoutY="126.0" />
          </children>
       </AnchorPane>
    </children>

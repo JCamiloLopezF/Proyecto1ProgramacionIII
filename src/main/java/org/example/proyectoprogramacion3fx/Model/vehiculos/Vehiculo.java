@@ -1,16 +1,12 @@
 package org.example.proyectoprogramacion3fx.Model.vehiculos;
 
-public class Vehiculo {
+public abstract class Vehiculo {
     private String placa;
-    private MarcaVehiculoCarro marcaCarro;
-    private MarcaVehiculoMoto marcaMoto;
     private int anioVehiculo;
     private final TipoVehiculo tipoVehiculo;
 
-    public Vehiculo(String placa, MarcaVehiculoCarro marcaCarro, MarcaVehiculoMoto marcaMoto, int anioVehiculo, TipoVehiculo tipoVehiculo) {
+    public Vehiculo(String placa, TipoVehiculo tipoVehiculo) {
         this.placa = placa;
-        this.marcaCarro = marcaCarro;
-        this.marcaMoto = marcaMoto;
         this.anioVehiculo = anioVehiculo;
         this.tipoVehiculo = tipoVehiculo;
     }
@@ -21,22 +17,6 @@ public class Vehiculo {
 
     public void setPlaca(String placa) {
         this.placa = placa;
-    }
-
-    public MarcaVehiculoCarro getMarcaCarro() {
-        return marcaCarro;
-    }
-
-    public void setMarcaCarro(MarcaVehiculoCarro marcaCarro) {
-        this.marcaCarro = marcaCarro;
-    }
-
-    public MarcaVehiculoMoto getMarcaMoto() {
-        return marcaMoto;
-    }
-
-    public void setMarcaMoto(MarcaVehiculoMoto marcaMoto) {
-        this.marcaMoto = marcaMoto;
     }
 
     public int getAnioVehiculo() {

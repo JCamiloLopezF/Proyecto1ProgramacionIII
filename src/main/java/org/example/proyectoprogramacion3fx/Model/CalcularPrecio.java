@@ -1,4 +1,4 @@
-package org.example.proyectoprogramacion3fx;
+package org.example.proyectoprogramacion3fx.Model;
 
 import org.example.proyectoprogramacion3fx.Model.citas.TipoCita;
 import org.example.proyectoprogramacion3fx.Model.vehiculos.TipoVehiculo;

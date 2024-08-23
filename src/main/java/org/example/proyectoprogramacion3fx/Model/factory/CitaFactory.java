@@ -1,4 +1,4 @@
-package org.example.proyectoprogramacion3fx.factory;
+package org.example.proyectoprogramacion3fx.Model.factory;
 
 
 import org.example.proyectoprogramacion3fx.Model.Cita;

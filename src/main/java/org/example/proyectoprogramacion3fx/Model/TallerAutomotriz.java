@@ -1,6 +1,5 @@
-package org.example.proyectoprogramacion3fx;
+package org.example.proyectoprogramacion3fx.Model;
 
-import org.example.proyectoprogramacion3fx.Model.Cita;
 import org.example.proyectoprogramacion3fx.Model.personas.Usuario;
 
 import java.util.ArrayList;
