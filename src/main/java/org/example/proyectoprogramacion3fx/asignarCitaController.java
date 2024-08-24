@@ -79,6 +79,7 @@ public class asignarCitaController implements Initializable{
         String tipoVehiculo = tipoVehiculo_comboBox.getSelectionModel().getSelectedItem().toString();
         String tipoCita = tipoCita_comboBox.getSelectionModel().getSelectedItem().toString();
         citaCreada_txt.setText("La cita del vehiculo con placa " + placa + " se le asignó la cita el día " + fecha + " a las " + hora +" para " + tipoCita);
+        
     }
 }
 
