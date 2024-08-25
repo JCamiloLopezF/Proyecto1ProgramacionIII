@@ -56,6 +56,9 @@ public class asignarCitaController implements Initializable{
     private TextField placa_txt;
 
     @FXML
+    private Label costo_txt;
+
+    @FXML
     private ComboBox<TipoCita> tipoCita_comboBox;
 
     @FXML
@@ -87,8 +90,14 @@ public class asignarCitaController implements Initializable{
         String hora = horaCita_txt.getText();
         LocalDate fecha = fechaCita_Date.getValue();
         String tipoVehiculo = tipoVehiculo_comboBox.getSelectionModel().getSelectedItem().toString();
+        TipoVehiculo tipoVehiculoOMG = tipoVehiculo_comboBox.getSelectionModel().getSelectedItem();
         String tipoCita = tipoCita_comboBox.getSelectionModel().getSelectedItem().toString();
+        TipoCita tipoCitaOMG = tipoCita_comboBox.getSelectionModel().getSelectedItem();
         citaCreada_txt.setText("La cita del vehiculo con placa " + placa + " se le asignó para el día " + fecha + " a las " + hora +" para " + tipoCita);
+        
+        double costo = taller.calcularPrecio(tipoCitaOMG, tipoVehiculoOMG);
+        String costoStr = Double.toString(costo);
+        costo_txt.setText("Costo: " + costoStr);
 
         taller.gestorCita.crearCita(placa, marca, anio, fecha, hora, tipoVehiculo, tipoCita);
 
