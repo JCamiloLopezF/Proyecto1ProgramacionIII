@@ -9,4 +9,5 @@ module org.example.proyectoprogramacion3fx {
 
     opens org.example.proyectoprogramacion3fx.Model;
     exports org.example.proyectoprogramacion3fx.Model;
+
 }

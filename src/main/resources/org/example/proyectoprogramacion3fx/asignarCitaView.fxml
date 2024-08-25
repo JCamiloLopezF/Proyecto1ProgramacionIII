@@ -8,34 +8,87 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="511.0" prefWidth="840.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.proyectoprogramacion3fx.asignarCitaController">
    <children>
-      <AnchorPane layoutX="-6.0" minHeight="0.0" minWidth="0.0" prefHeight="511.0" prefWidth="852.0">
+      <AnchorPane layoutX="-6.0" minHeight="0.0" minWidth="0.0" prefHeight="511.0" prefWidth="852.0" style="-fx-background-color: ffda8c;">
          <children>
-            <Label fx:id="user_txt" layoutX="698.0" layoutY="54.0" prefHeight="18.0" prefWidth="87.0" text="Francisco Arias" />
+            <Label fx:id="user_txt" layoutX="698.0" layoutY="54.0" prefHeight="18.0" prefWidth="98.0" text="Francisco Arias">
+               <font>
+                  <Font name="Roboto Bold" size="12.0" />
+               </font></Label>
             <ImageView fitHeight="32.0" fitWidth="42.0" layoutX="645.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../imagenes/user.png" />
                </image>
             </ImageView>
-            <Text layoutX="97.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tipo de vehiculo" />
-            <ComboBox fx:id="tipoVehiculo_comboBox" layoutX="219.0" layoutY="53.0" prefWidth="150.0" promptText="Seleccionar vehiculo" />
-            <Text layoutX="97.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Número de placa" />
-            <TextField fx:id="placa_txt" layoutX="219.0" layoutY="90.0" />
-            <Text layoutX="97.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Marca de vehiculo" />
-            <Button fx:id="asignar_btn" layoutX="191.0" layoutY="319.0" mnemonicParsing="false" onAction="#asignar_btn" prefHeight="26.0" prefWidth="72.0" text="Asignar" />
-            <Text layoutX="99.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tipo de cita" />
-            <ComboBox fx:id="tipoCita_comboBox" layoutX="220.0" layoutY="198.0" prefWidth="150.0" promptText="Seleccione el tipo" />
-            <Text layoutX="98.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Año de vehiculo" />
-            <TextField fx:id="anioVehiculo_txt" layoutX="220.0" layoutY="162.0" />
-            <DatePicker fx:id="fechaCita_Date" layoutX="219.0" layoutY="237.0" />
-            <Text layoutX="100.0" layoutY="251.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fecha de cita" />
-            <Text layoutX="100.0" layoutY="289.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hora de cita" />
-            <TextField fx:id="horaCita_txt" layoutX="219.0" layoutY="274.0" />
-            <Text fx:id="citaCreada_txt" layoutX="97.0" layoutY="392.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CITA: " wrappingWidth="637.3367538452148" />
-            <TextField fx:id="marca_txt" layoutX="220.0" layoutY="126.0" />
+            <Text layoutX="97.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tipo de vehiculo">
+               <font>
+                  <Font name="Roboto Bold" size="12.0" />
+               </font></Text>
+            <ComboBox fx:id="tipoVehiculo_comboBox" layoutX="219.0" layoutY="53.0" prefWidth="150.0" promptText="Seleccionar vehiculo" style="-fx-background-color: ffc03b; -fx-border-color: ffad00;" />
+            <Text layoutX="97.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Número de placa">
+               <font>
+                  <Font name="Roboto Bold" size="12.0" />
+               </font></Text>
+            <TextField fx:id="placa_txt" layoutX="219.0" layoutY="90.0" prefHeight="23.0" prefWidth="150.0" style="-fx-background-color: ffc03b;">
+               <font>
+                  <Font name="Roboto Bold" size="12.0" />
+               </font></TextField>
+            <Text layoutX="97.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Marca de vehiculo">
+               <font>
+                  <Font name="Roboto Bold" size="12.0" />
+               </font></Text>
+            <Button fx:id="asignar_btn" layoutX="220.0" layoutY="317.0" mnemonicParsing="false" onAction="#asignar_btn" prefHeight="26.0" prefWidth="72.0" style="-fx-background-color: ffc03b;" text="Asignar">
+               <font>
+                  <Font name="Roboto Bold" size="12.0" />
+               </font></Button>
+            <Text layoutX="99.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tipo de cita">
+               <font>
+                  <Font name="Roboto Bold" size="12.0" />
+               </font></Text>
+            <ComboBox fx:id="tipoCita_comboBox" layoutX="220.0" layoutY="198.0" prefWidth="150.0" promptText="Seleccione el tipo" style="-fx-background-color: ffc03b;" />
+            <Text layoutX="98.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Año de vehiculo">
+               <font>
+                  <Font name="Roboto Bold" size="12.0" />
+               </font></Text>
+            <TextField fx:id="anioVehiculo_txt" layoutX="220.0" layoutY="162.0" prefHeight="23.0" prefWidth="150.0" style="-fx-background-color: ffc03b;">
+               <font>
+                  <Font name="Roboto Bold" size="12.0" />
+               </font></TextField>
+            <DatePicker fx:id="fechaCita_Date" layoutX="219.0" layoutY="237.0" style="-fx-background-color: ffc03b;" />
+            <Text layoutX="100.0" layoutY="251.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fecha de cita">
+               <font>
+                  <Font name="Roboto Bold" size="12.0" />
+               </font></Text>
+            <Text layoutX="100.0" layoutY="289.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hora de cita">
+               <font>
+                  <Font name="Roboto Bold" size="12.0" />
+               </font></Text>
+            <TextField fx:id="horaCita_txt" layoutX="219.0" layoutY="274.0" prefHeight="23.0" prefWidth="150.0" style="-fx-background-color: ffc03b;">
+               <font>
+                  <Font name="Roboto Bold" size="12.0" />
+               </font></TextField>
+            <Text fx:id="citaCreada_txt" layoutX="97.0" layoutY="392.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CITA: " wrappingWidth="637.3367538452148">
+               <font>
+                  <Font name="Roboto Bold" size="12.0" />
+               </font></Text>
+            <TextField fx:id="marca_txt" layoutX="220.0" layoutY="126.0" prefHeight="23.0" prefWidth="150.0" style="-fx-background-color: ffc03b;">
+               <font>
+                  <Font name="Roboto Bold" size="12.0" />
+               </font></TextField>
+            <Button fx:id="cancelar_btn" layoutX="306.0" layoutY="317.0" mnemonicParsing="false" onAction="#cancelar_btn" prefHeight="26.0" prefWidth="72.0" style="-fx-background-color: ffc03b;" text="Cancelar">
+               <font>
+                  <Font name="Roboto Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="verCitas_btn" layoutX="677.0" layoutY="100.0" mnemonicParsing="false" onAction="#verCitas_btn" prefHeight="26.0" prefWidth="72.0" style="-fx-background-color: ffc03b;" text="Ver Citas">
+               <font>
+                  <Font name="Roboto Bold" size="12.0" />
+               </font>
+            </Button>
          </children>
       </AnchorPane>
    </children>

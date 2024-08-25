@@ -1,8 +1,5 @@
 package org.example.proyectoprogramacion3fx.Model;
 
-import org.example.proyectoprogramacion3fx.Model.personas.Usuario;
-import org.example.proyectoprogramacion3fx.Model.vehiculos.Vehiculo;
-
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
@@ -15,28 +12,28 @@ public class GestorCita {
         this.citas = new ArrayList<>();
     }
 
-    public void crearCita(LocalDate fechaHora, Usuario cliente, Vehiculo vehiculo, String hora) {
-        Cita nuevaCita = new Cita(fechaHora, cliente, vehiculo, hora);
+    public void crearCita(String placa, String marca, String anio, LocalDate fecha, String hora, String tipoVehiculo, String tipoCita) {
+        Cita nuevaCita = new Cita(placa, marca, anio, hora, fecha, tipoVehiculo, tipoCita);
         citas.add(nuevaCita);
         System.out.println("La cita se ha creado con éxito: " + nuevaCita);
     }
 
-    public boolean cancelarCita(LocalDate fechaHora) {
+    public String cancelarCita(LocalDate fechaHora,  String placa) {
+
         for (Cita cita : citas) {
-            if (cita.getFechaHora().equals(fechaHora)) {
+            if (cita.getFecha().equals(fechaHora) && cita.getPlaca().equals(placa)) {
                 citas.remove(cita);
-                System.out.println("La cita ha sido cancelada: " + cita);
-                return true;
+                String mensaje ="La cita del "+ cita.getFecha() + " del vehículo con placas " + cita.getPlaca() +" ha sido cancelada ";
+                return mensaje;
             }
         }
-
-        System.out.println("No se encontró cita en la fecha y hora especificada.");
-        return false;
+        String mensaje = ("No se encontró cita con la fecha y placa especificada");
+        return mensaje;
     }
 
     public Cita buscarCita(LocalDate fechaHora) {
         for (Cita cita : citas) {
-            if (cita.getFechaHora().equals(fechaHora)) {
+            if (cita.getFecha().equals(fechaHora)) {
                 return cita;
             }
         }
@@ -45,13 +42,19 @@ public class GestorCita {
         return null;
     }
 
-    public void listarCitas() {
+    public String listarCitas(String placa) {
+        String mensaje = "";
         if (citas.isEmpty()) {
-            System.out.println("No hay citas.");
-        } else {
+            mensaje = "No hay citas.";
+        }
+        else {
+            mensaje += "La(s) cita(s) del vehiculo con placa "+ placa + " son:\n";
             for (Cita cita : citas) {
-                System.out.println(cita);
+                if (cita.getPlaca().equals(placa)){
+                    mensaje += cita.getTipoCita() + " es el dia " + cita.getFecha() +" \n";
+                }
             }
         }
+        return mensaje;
     }
 }

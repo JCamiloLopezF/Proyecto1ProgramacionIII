@@ -1,62 +1,95 @@
 package org.example.proyectoprogramacion3fx.Model;
 
-import org.example.proyectoprogramacion3fx.Model.personas.Usuario;
-import org.example.proyectoprogramacion3fx.Model.vehiculos.Vehiculo;
-
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 
 public class Cita {
-    private LocalDate fecha;
-    private Usuario cliente;
-    private Vehiculo vehiculo;
+    private String placa;
+    private String marca;
+    private String anio;
     private String hora;
+    private LocalDate fecha;
+    private String tipoVehiculo;
+    private String tipoCita;
 
-    public Cita(LocalDate fecha, Usuario cliente, Vehiculo vehiculo, String hora) {
-        this.fecha = fecha;
-        this.cliente = cliente;
-        this.vehiculo = vehiculo;
+
+    public Cita(String placa, String marca, String anio, String hora, LocalDate fecha, String tipoVehiculo,
+            String tipoCita) {
+        this.placa = placa;
+        this.marca = marca;
+        this.anio = anio;
         this.hora = hora;
-    }
-
-    public LocalDate getFechaHora() {
-        return fecha;
-    }
-
-    public void setFechaHora(LocalDate fechaHora) {
         this.fecha = fecha;
+        this.tipoVehiculo = tipoVehiculo;
+        this.tipoCita = tipoCita;
     }
 
-    public Usuario getCliente() {
-        return cliente;
+
+    public String getPlaca() {
+        return placa;
     }
 
-    public void setCliente(Usuario cliente) {
-        this.cliente = cliente;
+
+    public void setPlaca(String placa) {
+        this.placa = placa;
     }
 
-    public Vehiculo getVehiculo() {
-        return vehiculo;
+
+    public String getMarca() {
+        return marca;
     }
 
-    public void setVehiculo(Vehiculo vehiculo) {
-        this.vehiculo = vehiculo;
+
+    public void setMarca(String marca) {
+        this.marca = marca;
     }
 
-    public String getHora(){
+
+    public String getAnio() {
+        return anio;
+    }
+
+
+    public void setAnio(String anio) {
+        this.anio = anio;
+    }
+
+
+    public String getHora() {
         return hora;
     }
 
-    public void setHora(String hora){
+
+    public void setHora(String hora) {
         this.hora = hora;
     }
 
-    @Override
-    public String toString() {
-        return "Cita{" +
-                "cliente='" + cliente + '\'' +
-                ", vehiculo='" + vehiculo + '\'' +
-                ", fecha=" + fecha +
-                '}';
+
+    public LocalDate getFecha() {
+        return fecha;
+    }
+
+
+    public void setFecha(LocalDate fecha) {
+        this.fecha = fecha;
+    }
+
+
+    public String getTipoVehiculo() {
+        return tipoVehiculo;
+    }
+
+
+    public void setTipoVehiculo(String tipoVehiculo) {
+        this.tipoVehiculo = tipoVehiculo;
+    }
+
+
+    public String getTipoCita() {
+        return tipoCita;
+    }
+
+
+    public void setTipoCita(String tipoCita) {
+        this.tipoCita = tipoCita;
     }
 }

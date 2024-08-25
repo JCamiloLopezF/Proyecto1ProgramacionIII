@@ -1,8 +1,10 @@
 package org.example.proyectoprogramacion3fx;
 
 import java.net.URL;
+import java.time.LocalDate;
 import java.util.ResourceBundle;
 
+import org.example.proyectoprogramacion3fx.Model.TallerAutomotriz;
 import org.example.proyectoprogramacion3fx.Model.citas.TipoCita;
 import org.example.proyectoprogramacion3fx.Model.vehiculos.TipoVehiculo;
 
@@ -31,6 +33,12 @@ public class asignarCitaController implements Initializable{
 
     @FXML
     private Button asignar_btn;
+
+    @FXML
+    private Button cancelar_btn;
+
+    @FXML
+    private Button verCitas_btn;
 
     @FXML
     private Text citaCreada_txt;
@@ -69,16 +77,96 @@ public class asignarCitaController implements Initializable{
 
     }
 
+    TallerAutomotriz taller = new TallerAutomotriz();
+
     @FXML
     void asignar_btn(ActionEvent event){
         String placa = placa_txt.getText();
         String marca = marca_txt.getText();
         String anio = anioVehiculo_txt.getText();
         String hora = horaCita_txt.getText();
-        String fecha = fechaCita_Date.getValue().toString();
+        LocalDate fecha = fechaCita_Date.getValue();
         String tipoVehiculo = tipoVehiculo_comboBox.getSelectionModel().getSelectedItem().toString();
         String tipoCita = tipoCita_comboBox.getSelectionModel().getSelectedItem().toString();
-        citaCreada_txt.setText("La cita del vehiculo con placa " + placa + " se le asignó la cita el día " + fecha + " a las " + hora +" para " + tipoCita);
+        citaCreada_txt.setText("La cita del vehiculo con placa " + placa + " se le asignó para el día " + fecha + " a las " + hora +" para " + tipoCita);
+
+        taller.gestorCita.crearCita(placa, marca, anio, fecha, hora, tipoVehiculo, tipoCita);
+
+        placa_txt.setText("");
+        marca_txt.setText("");
+        anioVehiculo_txt.setText("");
+        horaCita_txt.setText("");
+        tipoCita_comboBox.setValue(null);
+        tipoVehiculo_comboBox.setValue(null);
+        fechaCita_Date.setValue(null);
+        tipoVehiculo_comboBox.getSelectionModel().getSelectedItem().toString();
+        tipoCita = tipoCita_comboBox.getSelectionModel().getSelectedItem().toString();
     }
+
+    @FXML
+    void cancelar_btn(ActionEvent event){
+        String placa = placa_txt.getText();
+        LocalDate fecha = fechaCita_Date.getValue();
+        citaCreada_txt.setText(taller.gestorCita.cancelarCita(fecha, placa));
+
+        placa_txt.setText("");
+        marca_txt.setText("");
+        anioVehiculo_txt.setText("");
+        horaCita_txt.setText("");
+        tipoCita_comboBox.setValue(null);
+        tipoVehiculo_comboBox.setValue(null);
+        fechaCita_Date.setValue(null);
+        tipoVehiculo_comboBox.getSelectionModel().getSelectedItem().toString();
+        tipoCita_comboBox.getSelectionModel().getSelectedItem().toString();
+    }
+
+    @FXML
+    void verCitas_btn(ActionEvent event){
+        String placa = placa_txt.getText();
+        String listaCitas = taller.gestorCita.listarCitas(placa);
+        citaCreada_txt.setText(listaCitas);
+
+        placa_txt.setText("");
+        marca_txt.setText("");
+        anioVehiculo_txt.setText("");
+        horaCita_txt.setText("");
+        tipoCita_comboBox.setValue(null);
+        tipoVehiculo_comboBox.setValue(null);
+        fechaCita_Date.setValue(null);
+        tipoVehiculo_comboBox.getSelectionModel().getSelectedItem().toString();
+        tipoCita_comboBox.getSelectionModel().getSelectedItem().toString();
+    }
+
+
+
+
+
+
+
+
+
+    /*@FXML
+    void crearCita(ActionEvent event) {
+        String placa = placa_txt.getText();
+        String marca = marca_txt.getText();
+        String anio = anioVehiculo_txt.getText();
+        String hora = horaCita_txt.getText();
+        LocalDate fecha = fechaCita_Date.getValue();
+        String tipoVehiculo = tipoVehiculo_comboBox.getSelectionModel().getSelectedItem().toString();
+        String tipoCita = tipoCita_comboBox.getSelectionModel().getSelectedItem().toString();
+
+        gestorCita.crearCita()
+
+        placa_txt.clear();
+        marca_txt.clear();
+        anioVehiculo_txt.clear();
+        horaCita_txt.clear();
+        fechaCita_Date.setValue(null);
+        tipoVehiculo_comboBox.getSelectionModel().clearSelection();
+        tipoCita_comboBox.getSelectionModel().clearSelection();
+
+        citaCreada_txt.setText("Cita creada con éxito.");
+    }*/
+
 }
 
